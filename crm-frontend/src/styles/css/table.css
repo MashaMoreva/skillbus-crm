@@ -1,0 +1,156 @@
+.table {
+  margin: 0 auto; }
+
+.table__header {
+  position: relative;
+  color: #b0b0b0;
+  font-weight: 400;
+  font-size: 12px;
+  display: flex;
+  align-items: end;
+  text-align: start; }
+
+.table__header:nth-child(3),
+.table__header:nth-child(4) {
+  text-align: start; }
+
+.table__header.active {
+  color: #9873ff; }
+
+.table__header-row {
+  display: grid;
+  grid-template-columns: 130px 330px 190px 175px 160px 160px;
+  padding: 10px 20px; }
+
+.table__body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #ffffff;
+  min-height: 300px; }
+
+.table-row {
+  height: 60px;
+  padding: 10px 20px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 130px 330px 190px 175px 160px 160px;
+  border-bottom: 1px solid #c8c5d1; }
+
+.table-row.highlighted {
+  background-color: #e7e5eb; }
+
+.sort-arrow {
+  background-image: url(../../images/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 16px; }
+
+.sort-arrow.asc {
+  transform: rotate(180deg); }
+
+.sort-arrow.desc {
+  transform: rotate(0deg); }
+
+.cell__id,
+.cell__time {
+  color: #b0b0b0;
+  font-weight: 400;
+  font-size: 12px; }
+
+.cell__name,
+.cell__date,
+.edit-button,
+.delete-button {
+  color: #333333;
+  font-weight: 400;
+  font-size: 12px; }
+
+.cell__date {
+  margin-right: 7px; }
+
+.cell__contacts {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  padding-right: 50px; }
+
+.cell__actions {
+  display: flex;
+  gap: 30px; }
+
+.edit-icon {
+  margin-top: -4px;
+  display: flex;
+  width: 16px;
+  height: 16px;
+  background-image: url(../../images/edit.svg); }
+
+.delete-icon {
+  margin-top: -4px;
+  display: flex;
+  width: 16px;
+  height: 16px;
+  background-image: url(../../images/delete-red.svg); }
+
+.loading-icon {
+  background-image: url(../../images/loader-mini.svg);
+  animation: spin 1.5s linear infinite; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+.edit-button,
+.delete-button {
+  display: flex;
+  align-items: center; }
+
+.edit-button:hover {
+  color: #9873ff; }
+
+.delete-button:hover {
+  color: #f06a4d; }
+
+.sort-text {
+  color: #9873ff; }
+
+@media screen and (max-width: 1024px) {
+  .content__title {
+    margin-left: 27.5px; }
+  .table__header-row {
+    grid-template-columns: 110px 235px 120px 120px 150px 190px; }
+  .table-row {
+    grid-template-columns: 110px 235px 120px 120px 150px 190px; }
+  .cell__contacts {
+    padding-right: 40px; }
+  .table__header:nth-child(3) span {
+    max-width: 82px; }
+  .table__header:nth-child(3) .sort-arrow {
+    position: absolute;
+    top: 19px;
+    left: 55px; }
+  .table__header:nth-child(4) .sort-arrow {
+    position: absolute;
+    top: 19px;
+    left: 65px; } }
+
+@media screen and (max-width: 768px) {
+  .content__title {
+    margin-left: 2px; }
+  .table__header-row {
+    grid-template-columns: 110px 210px 100px 100px 130px 70px; }
+  .table-row {
+    grid-template-columns: 110px 210px 100px 100px 130px 70px; }
+  .created-at-cell {
+    display: flex;
+    flex-direction: column; }
+  .cell__contacts {
+    padding-right: 20px; }
+  .cell__actions {
+    flex-direction: column;
+    gap: 5px; } }

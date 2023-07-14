@@ -1,0 +1,56 @@
+.primary-button {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 17px 35px;
+  background-color: #9873ff;
+  justify-self: center;
+  margin-bottom: 5px; }
+
+.primary-button:hover {
+  background-color: #b89eff; }
+
+.primary-button:active {
+  background-color: #8052ff; }
+
+.primary-button:disabled {
+  background-color: #c8c5d1;
+  cursor: not-allowed; }
+
+.secondary-button {
+  display: flex;
+  align-self: center;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 13px 26.5px;
+  border: 1px solid #9873ff;
+  color: #9873ff;
+  font-weight: 600;
+  font-size: 14px; }
+
+.flat-button {
+  color: #333333;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  text-decoration-line: underline; }
+
+.float-button {
+  position: fixed;
+  z-index: 11;
+  bottom: 20px;
+  right: 60px;
+  padding: 12px 10px;
+  border: 2px solid #9873ff;
+  border-radius: 30px;
+  background-color: transparent; }
+
+.float-button:hover {
+  border: 2px solid #b89eff; }
+
+@media screen and (max-width: 1024px) {
+  .float-button {
+    right: 20px; } }

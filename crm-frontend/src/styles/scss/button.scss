@@ -1,0 +1,68 @@
+@import "./colors.scss";
+
+.primary-button {
+  color: $white;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 17px 35px;
+  background-color: $firm;
+  justify-self: center;
+  margin-bottom: 5px;
+}
+
+.primary-button:hover {
+  background-color: $firm-hover;
+}
+
+.primary-button:active {
+  background-color: $firm-active;
+}
+
+.primary-button:disabled {
+  background-color: $gray;
+  cursor: not-allowed;
+}
+
+.secondary-button {
+  display: flex;
+  align-self: center;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 13px 26.5px;
+  border: 1px solid $firm;
+  color: $firm;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.flat-button {
+  color: $text-black;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  text-decoration-line: underline;
+}
+
+.float-button {
+  position: fixed;
+  z-index: 11;
+  bottom: 20px;
+  right: 60px;
+  padding: 12px 10px;
+  border: 2px solid $firm;
+  border-radius: 30px;
+  background-color: transparent;
+}
+
+.float-button:hover {
+  border: 2px solid $firm-hover;
+}
+
+@media screen and (max-width: 1024px) {
+  .float-button {
+    right: 20px;
+  }
+}

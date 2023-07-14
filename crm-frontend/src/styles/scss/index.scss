@@ -1,0 +1,56 @@
+@import "../../vendor/normalize.css";
+@import "../../vendor/font/font.css";
+@import "./colors.scss";
+@import "./page.scss";
+@import "./modal.scss";
+@import "./button.scss";
+@import "./form.scss";
+@import "./header.scss";
+@import "./content.scss";
+@import "./table.scss";
+@import "./tooltip.scss";
+@import "./loader.scss";
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+input {
+  padding: 0;
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+
+td {
+  padding: 0;
+}

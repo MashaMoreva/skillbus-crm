@@ -1,0 +1,22 @@
+@import "./colors.scss";
+
+.tooltip {
+  position: absolute;
+  background-color: $text-black;
+  color: $white;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 7px 14px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  border: 7px solid transparent;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-color: $text-black;
+}

@@ -1,0 +1,208 @@
+.form {
+  margin-top: 27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.form__inputbox {
+  position: relative;
+  margin: 0 30px 30px 30px;
+  width: 390px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #c8c5d1; }
+
+.form__inputbox:last-of-type {
+  margin-bottom: 25px; }
+
+.form__inputbox label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #b0b0b0;
+  font-size: 14px;
+  pointer-events: none;
+  transition: 0.5s; }
+
+.form__inputbox .form__label--required:first-of-type::after {
+  content: "*";
+  color: #9873ff; }
+
+.form__inputbox input:not(:placeholder-shown) ~ label,
+.form__inputbox input:focus ~ label {
+  top: -5px;
+  font-size: 10px; }
+
+.form__inputbox input {
+  position: relative;
+  width: 100%;
+  margin-top: 2px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #333333; }
+
+.form__add-contact-button {
+  background-color: #e7e5eb;
+  color: var(--text-black);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  width: 100%; }
+
+.form__add-contact-button:hover {
+  color: #9873ff; }
+
+.form__add-contact-button::before {
+  display: flex;
+  margin: 3px 4px 0 0;
+  content: url(../../images/add-client.svg); }
+
+.form__add-contact-button:hover::before {
+  content: url(../../images/add-client-firm.svg); }
+
+.contacts-box {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+  padding: 25px 30px;
+  background-color: rgba(200, 197, 209, 0.2);
+  max-height: 200px;
+  overflow-y: auto; }
+
+.contacts-box::-webkit-scrollbar {
+  width: 5px; }
+
+.contacts-box::-webkit-scrollbar-track {
+  background-color: transparent; }
+
+.contacts-box::-webkit-scrollbar-thumb {
+  background-color: #b89eff;
+  border-radius: 5px; }
+
+.form__contact {
+  position: relative;
+  display: flex; }
+
+.custom-select {
+  position: relative; }
+
+.custom-select__input {
+  max-width: 123px;
+  background-color: #e7e5eb;
+  background-image: url(../../images/arrow-select.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 12px) center;
+  padding: 11px 12px;
+  border: 1px solid #c8c5d1;
+  color: #333333;
+  font-size: 12px;
+  font-weight: 400; }
+
+.custom-select.open .custom-select__input {
+  background-image: url(../../images/arrow-select-up.svg); }
+
+.form__contact-input {
+  position: relative;
+  background-color: rgba(200, 197, 209, 0.2);
+  width: 241px;
+  padding: 7px 12px;
+  border-top: 1px solid #c8c5d1;
+  border-bottom: 1px solid #c8c5d1; }
+
+.custom-select .custom-select__options {
+  display: none; }
+
+.custom-select.open .custom-select__options {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #f4f3f6;
+  border: 1px solid #c8c5d1;
+  border-top: none;
+  color: #333333;
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  z-index: 11; }
+
+.custom-select__option {
+  padding: 10px 12px 5px 12px; }
+
+.custom-select__option:hover {
+  background-color: rgba(231, 229, 235, 0.5); }
+
+.form__contact-delete-button {
+  background: #e7e5eb url(../../images/delete-gray.svg) no-repeat center;
+  border: 1px solid #c8c5d1;
+  width: 27px;
+  height: 38px; }
+
+.form__contact-delete-button:hover {
+  background: #e7e5eb url(../../images/delete-red.svg) no-repeat center;
+  border: 1px solid #f06a4d; }
+
+.contact-icon {
+  display: flex;
+  width: 16px;
+  height: 16px; }
+
+.phone-icon {
+  background-image: url(../../images/phone.svg); }
+
+.email-icon {
+  background-image: url(../../images/mail.svg); }
+
+.facebook-icon {
+  background-image: url(../../images/fb.svg); }
+
+.vk-icon {
+  background-image: url(../../images/vk.svg); }
+
+.twitter-icon {
+  background-image: url(../../images/twitter.svg); }
+
+.instagram-icon {
+  background-image: url(../../images/instagram.svg); }
+
+.telegram-icon {
+  background-image: url(../../images/telegram.svg); }
+
+.default-icon {
+  background-image: url(../../images/default.svg); }
+
+.error {
+  border-bottom: 1px solid #f06a4d; }
+
+.form__error-message {
+  color: #f06a4d;
+  font-size: 10px;
+  font-weight: 400;
+  position: absolute;
+  top: 30px; }
+
+.form__contact .form__error-message {
+  color: #f06a4d;
+  font-size: 10px;
+  font-weight: 400;
+  position: absolute;
+  top: 40px;
+  left: 123px; }
+
+.error-message {
+  color: #f06a4d;
+  max-width: 255px;
+  font-size: 10px;
+  font-weight: 400;
+  text-align: center;
+  padding: 8px 0; }

@@ -1,0 +1,15 @@
+@import "./colors.scss";
+
+.content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.content__title {
+  max-width: fit-content;
+  text-align: start;
+  color: $text-black;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 40px 0 10px 90px;
+}
